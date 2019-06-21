@@ -1,0 +1,6 @@
+framework module Pods_TweetItSweetUITests {
+  umbrella header "Pods-TweetItSweetUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

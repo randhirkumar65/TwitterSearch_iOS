@@ -1,0 +1,6 @@
+framework module Pods_TweetItSweet {
+  umbrella header "Pods-TweetItSweet-umbrella.h"
+
+  export *
+  module * { export * }
+}

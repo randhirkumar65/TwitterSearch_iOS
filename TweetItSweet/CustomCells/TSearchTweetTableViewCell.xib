@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TSearchTweetTableViewCell" rowHeight="333" id="FTv-uZ-tsx" customClass="TSearchTweetTableViewCell" customModule="TweetItSweet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FTv-uZ-tsx" id="Uao-25-SdC">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="332.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDR-Ja-Ed9">
+                        <rect key="frame" x="10" y="10" width="355" height="312.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TqJ-k1-gOA">
+                                <rect key="frame" x="20" y="20" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ca4-lw-tTE"/>
+                                    <constraint firstAttribute="width" constant="48" id="dG9-EE-ILR"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Ud-8u-IxD">
+                                <rect key="frame" x="76" y="20" width="259" height="272.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rjg-CT-ci4">
+                                        <rect key="frame" x="0.0" y="0.0" width="224" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oc-JF-30z">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@handle • 2h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOL-Fl-C7f">
+                                                <rect key="frame" x="148" y="0.0" width="76" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHk-eI-Idr">
+                                        <rect key="frame" x="0.0" y="28.5" width="83" height="186"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eM2-b5-oRq">
+                                        <rect key="frame" x="0.0" y="222.5" width="259" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Dc-jU-b6n">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ulj-vR-SSd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title=" 0" image="retweetIcon">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe1-yA-CJO">
+                                                <rect key="frame" x="134.5" y="0.0" width="124.5" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="FMZ-ph-oNW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="0" image="favouriteIcon">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="8Dc-jU-b6n" firstAttribute="width" secondItem="fe1-yA-CJO" secondAttribute="width" id="yaU-NO-eM6"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eM2-b5-oRq" secondAttribute="trailing" id="Na5-XZ-awE"/>
+                                    <constraint firstItem="eM2-b5-oRq" firstAttribute="leading" secondItem="4Ud-8u-IxD" secondAttribute="leading" id="htG-dD-7ja"/>
+                                    <constraint firstAttribute="bottom" secondItem="eM2-b5-oRq" secondAttribute="bottom" id="iw2-y9-TaO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Ud-8u-IxD" firstAttribute="leading" secondItem="TqJ-k1-gOA" secondAttribute="trailing" constant="8" id="CnJ-Xw-sR8"/>
+                            <constraint firstItem="TqJ-k1-gOA" firstAttribute="top" secondItem="oDR-Ja-Ed9" secondAttribute="top" constant="20" id="XlL-Uy-Bt7"/>
+                            <constraint firstAttribute="bottom" secondItem="4Ud-8u-IxD" secondAttribute="bottom" constant="20" id="pDg-pL-H4F"/>
+                            <constraint firstItem="TqJ-k1-gOA" firstAttribute="leading" secondItem="oDR-Ja-Ed9" secondAttribute="leading" constant="20" id="pSU-6U-IB0"/>
+                            <constraint firstItem="4Ud-8u-IxD" firstAttribute="top" secondItem="oDR-Ja-Ed9" secondAttribute="top" constant="20" id="rm4-r3-24p"/>
+                            <constraint firstAttribute="trailing" secondItem="4Ud-8u-IxD" secondAttribute="trailing" constant="20" id="twA-nc-LHR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="oDR-Ja-Ed9" firstAttribute="top" secondItem="Uao-25-SdC" secondAttribute="top" constant="10" id="CxH-R9-X4C"/>
+                    <constraint firstAttribute="bottom" secondItem="oDR-Ja-Ed9" secondAttribute="bottom" constant="10" id="HOG-8A-3AP"/>
+                    <constraint firstAttribute="trailing" secondItem="oDR-Ja-Ed9" secondAttribute="trailing" constant="10" id="puZ-kF-5Sk"/>
+                    <constraint firstItem="oDR-Ja-Ed9" firstAttribute="leading" secondItem="Uao-25-SdC" secondAttribute="leading" constant="10" id="vR4-oW-U3g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="aContainerView" destination="oDR-Ja-Ed9" id="5oc-Y4-hc1"/>
+                <outlet property="aDescLabel" destination="QHk-eI-Idr" id="9Kn-uw-X1c"/>
+                <outlet property="aFullNameLabel" destination="7Oc-JF-30z" id="xAy-Hy-TUh"/>
+                <outlet property="aLikeButton" destination="fe1-yA-CJO" id="qgQ-Jd-GTi"/>
+                <outlet property="aProfileImageView" destination="TqJ-k1-gOA" id="0Bx-TX-Kps"/>
+                <outlet property="aReTweetButton" destination="8Dc-jU-b6n" id="wwE-Bf-2I8"/>
+                <outlet property="ahandleLabel" destination="IOL-Fl-C7f" id="qpZ-As-iuh"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="295"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="favouriteIcon" width="24" height="24"/>
+        <image name="retweetIcon" width="24" height="24"/>
+    </resources>
+</document>
