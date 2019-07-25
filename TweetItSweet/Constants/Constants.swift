@@ -12,12 +12,13 @@ import UIKit
 // MARK: API Constants
 let kTwitterURL = "https://api.twitter.com/1.1/search/tweets.json"
 let kBASE_URL = "https://api.twitter.com/1.1"
-let kTwitterAPISecretKey = "C4nSb5vmSL5ozjCApbuKFhvHbsohEzem8aqsNY2LLhik6AhHda"
-let kTwitterAppID = "16550081"
-let kConsumerKey = "8S7THedqrDaiMuSt2oyNdLuux"
-let kConsumerSecretKey = "bwU0YGPmzvxy8Xf1IVdDvJkaH3mEJN7yTaxM5AlQKsrcwceSiH"
-let kAccessToken = "1140325335755452416-Eq3KnExJd31ZNCunE8OW8biajT2r96"
-let kAccessSecretToken = "n5ML7HLamhzIAQBL4ZzjlKt32G9L9FW0xOWHBMXWDzSjj"
+#error("Please add your Twitter API and secret key")
+let kTwitterAPISecretKey = "@addyourAPISecretKey"
+let kTwitterAppID = "@addyourID"
+let kConsumerKey = "@addyourCkey"
+let kConsumerSecretKey = "@addyourCsecretkey"
+let kAccessToken = "addyourAceessToken"
+let kAccessSecretToken = "addyourAceessSecretToken"
 
 // MARK: StoryBoard & Cell Identifiers
 let kSearchViewController = "TSearchViewController"
